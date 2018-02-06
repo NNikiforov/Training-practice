@@ -1,0 +1,11 @@
+commit d495813b0e4e695f6f696123937719fba9730ade (HEAD -> master)
+Author: Nikita <nikkika2011@mail.ru>
+Date:   Tue Feb 6 11:15:11 2018 +0300
+
+    add
+
+commit 14a9c41f504bf9f41f17da1719cb932e044e552c
+Author: Nikita <nikkika2011@mail.ru>
+Date:   Tue Feb 6 11:11:20 2018 +0300
+
+    add .gitignore
