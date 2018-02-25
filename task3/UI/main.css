@@ -1,0 +1,159 @@
+main{
+    height: auto;
+}
+
+main div{
+    position: relative;
+    font-family: Arial;
+}
+
+.personal_inf{
+    padding: 5px;
+    position: relative;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 0px;
+    margin-right: 25%;
+    margin-left: 25%;
+    margin-bottom: 5px;
+    width: 50%;
+    overflow: hidden;
+    height: auto;
+}
+
+.personal_inf img{
+    float: left;
+}
+
+.personal_inf h3{
+    padding-top: 20px;
+    margin: 0px;
+    text-align: center;
+}
+
+.personal_inf p{
+    font-size: 20px;
+    color: darkgrey;
+    margin: 0px;
+}
+
+.post{
+    position: relative;
+    padding: 5px;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 0px;
+    margin-right: 25%;
+    margin-left: 25%;
+    margin-bottom: 5px;
+    width: 50%;
+    height: 150px;
+    overflow: hidden;
+    height: auto;
+}
+
+.top_inf img{
+    height: 35px;
+    float: left;
+}
+.top_inf h3{
+    margin: 0px;
+    padding-top: 8px;
+}
+
+.post_date{
+    float: right;
+}
+
+.post_date h3{
+    font-size: 14px;
+    color: darkgrey;
+    margin-right: 10px;
+}
+
+.bar{
+    overflow: hidden;
+    height: auto;
+}
+
+.bar div{
+    display: inline-block;
+}
+
+.bar img{
+    margin-left: 20px;
+    margin-right: 5px;
+    height: 30px;
+    float: left;
+}
+
+.bar h4{
+    margin: 0px;
+    padding-top: 8px;
+    color: darkgrey;
+
+}
+
+.likes{
+    width:150px;
+    float: left;
+}
+
+.tools{
+    float: right;
+    margin-top: 5px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.tools img{
+    width: 20px;
+    height: auto;
+}
+
+.describtion{
+    height: auto;
+    overflow: hidden;
+}
+
+.describtion h4{
+    font-size: 14px;
+    margin-left: 20px;
+    margin-right: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    float: left;
+}
+
+.describtion p{
+    float:right;
+    width: 80%;
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+.show_more{
+    padding: 5px;
+    position: relative;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 0px;
+    margin-right: 25%;
+    margin-left: 25%;
+    margin-bottom: 5px;
+    width: 50%;
+    height: 150px;
+    overflow: hidden;
+    height: auto;
+}
+
+.show_more h3{
+    text-align: center;
+    margin: 5px;
+}
+
+input{
+    font-weight: normal;
+}
