@@ -7,7 +7,7 @@ main div{
     font-family: Arial;
 }
 
-.personal_inf{
+.personal-inf{
     padding: 5px;
     position: relative;
     background-color: white;
@@ -21,17 +21,17 @@ main div{
     height: auto;
 }
 
-.personal_inf img{
+.personal-inf img{
     float: left;
 }
 
-.personal_inf h3{
+.personal-inf h3{
     padding-top: 20px;
     margin: 0px;
     text-align: center;
 }
 
-.personal_inf p{
+.personal-inf p{
     font-size: 20px;
     color: darkgrey;
     margin: 0px;
@@ -52,20 +52,20 @@ main div{
     height: auto;
 }
 
-.top_inf img{
+.top-inf img{
     height: 35px;
     float: left;
 }
-.top_inf h3{
+.top-inf h3{
     margin: 0px;
     padding-top: 8px;
 }
 
-.post_date{
+.post-date{
     float: right;
 }
 
-.post_date h3{
+.post-date h3{
     font-size: 14px;
     color: darkgrey;
     margin-right: 10px;
@@ -134,7 +134,7 @@ main div{
     font-size: 12px;
 }
 
-.show_more{
+.show-more{
     padding: 5px;
     position: relative;
     background-color: white;
@@ -149,7 +149,7 @@ main div{
     height: auto;
 }
 
-.show_more h3{
+.show-more h3{
     text-align: center;
     margin: 5px;
 }

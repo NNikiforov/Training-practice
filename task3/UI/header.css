@@ -55,7 +55,7 @@ header div{
     float: left;
 }
 
-.log_out_button{
+.log-out-button{
     float: right;
     margin-right: 10px;
     background: #FFA200;
@@ -70,7 +70,7 @@ header div{
     padding-bottom: 0px;
 }
 
-.log_out_button:hover{
+.log-out-button:hover{
     float: right;
     margin-right: 10px;
     background: #fecb4c;
@@ -85,7 +85,7 @@ header div{
     padding-bottom: 0px;
 }
 
-.log_out_button h3{
+.log-out-button h3{
     font-size: 16px;
     margin: 5px;
 }

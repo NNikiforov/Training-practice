@@ -18,13 +18,13 @@ nav div{
     margin-right: 5%;
 }
 
-.authors_filter input, .authors_filter h4, .datas_filter input,
-.datas_filter h4, .tgs_filter input, .tgs_filter h4{
+.authors-filter input, .authors-filter h4, .datas-filter input,
+.datas-filter h4, .tgs-filter input, .tgs-filter h4{
     margin: 1px;
     display: inline-block;
 }
 
-.filter_button{
+.filter-button{
     float: right;
     margin-right: 10px;
     margin-top: 15px;
@@ -40,7 +40,7 @@ nav div{
     padding-bottom: 5px;
 }
 
-.filter_button:hover{
+.filter-button:hover{
     float: right;
     margin-right: 10px;
     margin-top: 15px;
@@ -56,14 +56,14 @@ nav div{
     padding-bottom: 5px;
 }
 
-.filter_button h3 {
+.filter-button h3 {
     margin: 0%;
 }
-.user_log{
+.user-log{
     width: 110px;
     float: left;
 }
 
-.post_photo img{
+.post-photo img{
     width: 100%;
 }
