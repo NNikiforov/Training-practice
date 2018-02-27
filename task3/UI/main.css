@@ -157,3 +157,18 @@ main div{
 input{
     font-weight: normal;
 }
+
+@media screen and (max-width: 420px) {
+    .post {
+        width: 85%;
+        margin: 0%;
+    }
+    .show-more{
+        width: 85%;
+        margin: 0%;
+    }
+    .personal-inf{
+        width: 85%;
+        margin: 0%;
+    }
+}
