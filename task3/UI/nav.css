@@ -22,6 +22,7 @@ nav div{
 .datas-filter h4, .tgs-filter input, .tgs-filter h4{
     margin: 1px;
     display: inline-block;
+    border-radius: 5px;
 }
 
 .filter-button{
@@ -59,8 +60,9 @@ nav div{
 .filter-button h3 {
     margin: 0%;
 }
+
 .user-log{
-    width: 110px;
+    width: 60%;
     float: left;
 }
 

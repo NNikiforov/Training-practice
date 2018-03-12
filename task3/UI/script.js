@@ -190,6 +190,7 @@ let photoPosts = [
     author: '';
     hashTags: '';
 }*/
+
 let module = (function () {
     function getPhotoPosts(skip, top, filterConfig) {
         skip = skip || 0;
