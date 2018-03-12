@@ -298,7 +298,6 @@ let module = (function () {
     function addPhotoPost(photoPost) {
         if (!validatePhotoPost(photoPost))
             return false;
-
         return photoPosts.length + 1 === photoPosts.push(photoPost);
     }
 

@@ -1,13 +1,13 @@
-main{
+main {
     height: auto;
 }
 
-main div{
+main div {
     position: relative;
     font-family: Arial;
 }
 
-.personal-inf{
+.personal-inf {
     padding: 5px;
     position: relative;
     background-color: white;
@@ -21,23 +21,23 @@ main div{
     height: auto;
 }
 
-.personal-inf img{
+.personal-inf img {
     float: left;
 }
 
-.personal-inf h3{
+.personal-inf h3 {
     padding-top: 20px;
     margin: 0px;
     text-align: center;
 }
 
-.personal-inf p{
+.personal-inf p {
     font-size: 20px;
     color: darkgrey;
     margin: 0px;
 }
 
-.post{
+.post {
     position: relative;
     padding: 5px;
     background-color: white;
@@ -52,71 +52,72 @@ main div{
     height: auto;
 }
 
-.top-inf img{
+.top-inf img {
     height: 35px;
     float: left;
 }
-.top-inf h3{
+
+.top-inf h3 {
     margin: 0px;
     padding-top: 8px;
 }
 
-.post-date{
+.post-date {
     float: right;
 }
 
-.post-date h3{
+.post-date h3 {
     font-size: 14px;
     color: darkgrey;
     margin-right: 10px;
 }
 
-.bar{
+.bar {
     overflow: hidden;
     height: auto;
 }
 
-.bar div{
+.bar div {
     display: inline-block;
 }
 
-.bar img{
+.bar img {
     margin-left: 20px;
     margin-right: 5px;
     height: 30px;
     float: left;
 }
 
-.bar h4{
+.bar h4 {
     margin: 0px;
     padding-top: 8px;
     color: darkgrey;
 
 }
 
-.likes{
-    width:150px;
+.likes {
+    width: 150px;
     float: left;
 }
 
-.tools{
+.tools {
     float: right;
     margin-top: 5px;
     margin-right: 20px;
     margin-left: 20px;
 }
 
-.tools img{
+.tools img {
     width: 20px;
     height: auto;
 }
 
-.describtion{
+.describtion {
     height: auto;
     overflow: hidden;
 }
 
-.describtion h4{
+.describtion h4 {
     font-size: 14px;
     margin-left: 20px;
     margin-right: 5px;
@@ -125,8 +126,8 @@ main div{
     float: left;
 }
 
-.describtion p{
-    float:right;
+.describtion p {
+    float: right;
     width: 80%;
     margin-top: 0px;
     margin-left: 10px;
@@ -134,7 +135,7 @@ main div{
     font-size: 12px;
 }
 
-.show-more{
+.show-more {
     padding: 5px;
     position: relative;
     background-color: white;
@@ -149,12 +150,12 @@ main div{
     height: auto;
 }
 
-.show-more h3{
+.show-more h3 {
     text-align: center;
     margin: 5px;
 }
 
-input{
+input {
     font-weight: normal;
 }
 
@@ -163,11 +164,13 @@ input{
         width: 85%;
         margin: 0%;
     }
-    .show-more{
+
+    .show-more {
         width: 85%;
         margin: 0%;
     }
-    .personal-inf{
+
+    .personal-inf {
         width: 85%;
         margin: 0%;
     }
