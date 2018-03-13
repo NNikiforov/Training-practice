@@ -2,12 +2,13 @@ footer{
     position: relative;
     padding: 0.1em;
     color: black;
-    background: grey;
+    border-top: solid;
     overflow: hidden;
     height: auto;
     font-family: Arial;
     font-size: x-small;
     vertical-align: middle;
+    bottom:0px;
 }
 
 footer img{

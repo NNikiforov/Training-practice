@@ -113,6 +113,7 @@ let dom = (function () {
             let personalInf = document.createElement('div');
             let imgPersonInf = document.createElement('img');
             let paragraph = document.createElement('p');
+            let italicParagraph = document.createElement('i');
             let addPhoto = document.createElement('div');
             let addPhotoImg = document.createElement('img');
             let logButton = document.createElement('div');
@@ -133,17 +134,15 @@ let dom = (function () {
 
             textLogButton.innerHTML = 'SIGN OUT';
             userName.innerHTML = user;
-            paragraph.innerHTML = "<i>\n" +
-                "                Publications: 21 <br>\n" +
-                "                Subscribers: 12 <br>\n" +
-                "                Subsribtions: 13\n" +
-                "            </i>";
+            italicParagraph.innerHTML ="Publications: 21 <br>" +
+                "Subscribers: 12 <br>Subsribtions: 13";
 
 
             userDiv.appendChild(userImg);
             userDiv.appendChild(userName.cloneNode(true));
             personalInf.appendChild(imgPersonInf);
             personalInf.appendChild(userName);
+            paragraph.appendChild(italicParagraph);
             personalInf.appendChild(paragraph);
             addPhoto.appendChild(addPhotoImg);
             logButton.appendChild(textLogButton);
@@ -221,9 +220,9 @@ function addPhotoPost(photoPost, skip, top, filterConfig) {
     return false;
 }
 
-function deletePhotoPost(id) {
+function deletePhotoPost(id, skip, top, filterConfig) {
     if (module.removePhotoPost(id.toString())) {
-        dom.removePhotoPost(id.toString());
+        showPhotoPosts(skip, top, filterConfig);
         return true;
     }
     return false;
