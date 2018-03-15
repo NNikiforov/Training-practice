@@ -190,6 +190,7 @@ let photoPosts = [
     author: '';
     hashTags: '';
 }*/
+
 let module = (function () {
     function getPhotoPosts(skip, top, filterConfig) {
         skip = skip || 0;
@@ -198,12 +199,12 @@ let module = (function () {
 
         let array = photoPosts;
 
-        if ('date' in filterConfig && filterConfig.date !== 'Invalid Date') {
+        if ('date' in filterConfig && filterConfig.date instanceof Date) {
             array = array.filter(function (obj) {
-                if (obj.createdAt === 'Invalid Date')
-                    return false;
-                else
+                if (obj.createdAt instanceof Date)
                     return obj.createdAt >= filterConfig.date;
+                else
+                    return false;
             });
         }
 
@@ -250,7 +251,7 @@ let module = (function () {
         }
 
         //проверка на существование description и его тип
-        if (!('description' in photoPost) && typeof(photoPost.description) !== 'string')
+        if (!('description' in photoPost) || typeof(photoPost.description) !== 'string')
             return false;
 
         //проверка размера description
@@ -258,11 +259,11 @@ let module = (function () {
             return false;
 
         //проверка на существование createdAt и его тип
-        if (!('createdAt' in photoPost) && typeof(photoPost.createdAt) !== 'Date')
+        if (!('createdAt' in photoPost) || !(photoPost.createdAt instanceof Date))
             return false;
 
         //проверка на существование author и его тип
-        if (!('author' in photoPost) && typeof(photoPost.author) !== 'string')
+        if (!('author' in photoPost) || typeof(photoPost.author) !== 'string')
             return false;
 
         //проверка размера author
@@ -270,7 +271,7 @@ let module = (function () {
             return false;
 
         //проверка на существование photoLink и его тип
-        if (!('photoLink' in photoPost) && typeof(photoPost.photoLink) !== 'string')
+        if (!('photoLink' in photoPost) || typeof(photoPost.photoLink) !== 'string')
             return false;
 
         //проверка размера photoLink
@@ -297,7 +298,6 @@ let module = (function () {
     function addPhotoPost(photoPost) {
         if (!validatePhotoPost(photoPost))
             return false;
-
         return photoPosts.length + 1 === photoPosts.push(photoPost);
     }
 
@@ -377,13 +377,13 @@ console.log(module.getPhotoPosts(0, 10, {
     hashTags: ['#2018', '#beautiful', '']
 }));
 
-console.log('getPhotoPost:');
+console.log('***getPhotoPost***');
 console.log('Get post with id:3:');
 console.log(module.getPhotoPost('3'));
 console.log('Get post with wrong id:33:');
 console.log(module.getPhotoPost('33'));
 
-console.log('addPhotoPost:');
+console.log('***addPhotoPost***');
 console.log('Add correct post:');
 console.log(module.addPhotoPost({
     id: '27',
@@ -405,7 +405,7 @@ console.log(module.addPhotoPost({
     likes: ['kryshaleyla', 'velitchenkoyury', 'anton_oleshkevich_stpr', 'evgeniygavrilin', 'wylsacom', 'evaktotam', 'anton.xameleon.by', 'yurydud', 'obladaet', 'filonka113']
 }) ? 'Post added' : 'Post didnot add');
 
-console.log('editPhotoPost:');
+console.log('***editPhotoPost***');
 console.log('Change post description with id 27:');
 console.log(module.editPhotoPost('27', {description: 'Спасибо.!!!!!!!!!!!!!!!!!!!!!!!!!!!!!'}) ? 'Post changed' : 'Post didnot change');
 console.log('Try to change post with id 27 by wrong description:');
@@ -413,7 +413,7 @@ console.log(module.editPhotoPost('27', {description: '??????????????????????????
 console.log('Try to change post with wrong id 37:');
 console.log(module.editPhotoPost('37', {description: '???????????????'}) ? 'Post changed' : 'Post didnot change');
 
-console.log('editPhotoPost:');
+console.log('***editPhotoPost***');
 console.log('Remove post with id 27:');
 console.log(module.removePhotoPost('27') ? 'Post removed' : 'Post didnot remove');
 console.log('Try ti remove post with id 27:');
