@@ -1,0 +1,28 @@
+footer{
+    position: relative;
+    padding: 0.1em;
+    color: black;
+    border-top: solid;
+    overflow: hidden;
+    height: auto;
+    font-family: Arial;
+    font-size: x-small;
+    vertical-align: middle;
+    bottom:0px;
+}
+
+footer img{
+    height: 35px;
+    display: inline-block;
+    float: left;
+    padding-top: 5px;
+}
+
+footer h4{
+    text-align: center;
+    width:24%;
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+    height: auto;
+}

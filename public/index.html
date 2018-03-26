@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fireplace</title>
+    <link href="header.css" rel="stylesheet">
+    <link href="footer.css" rel="stylesheet">
+    <link href="add_photo.css" rel="stylesheet">
+    <link href="nav.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+
+</head>
+<body>
+
+<header>
+    <div class="logo" align="left">
+        <img src="img/default label.png">
+        <h1><i>FIREPLACE</i></h1>
+    </div>
+
+    <div class="log-out-button">
+        <h3 align="center">SIGN OUT</h3>
+    </div>
+
+    <div class="user" align="right">
+        <img src="img/avatar.png">
+        <h3>User123</h3>
+    </div>
+</header>
+
+<nav>
+    <div class="title-filter">
+        <h4>Filter by:</h4>
+    </div>
+
+    <div class="authors-filter">
+        <input type="checkbox">
+        <h4>Author:</h4>
+        <input type="text" list="author-suggestions">
+        <datalist id="author-suggestions">
+        </datalist>
+    </div>
+
+
+    <div class="datas-filter">
+        <input type="checkbox">
+        <h4>Data:</h4>
+        <input type="text" placeholder="12/02/2015">
+    </div>
+
+    <div class="datas-filter">
+        <input type="checkbox">
+        <h4>Tags:</h4>
+        <input type="text" list="tag-suggestions">
+        <datalist id="tag-suggestions">
+        </datalist>
+    </div>
+
+    <div class="filter-button">
+        <h3 align="center">FILTER</h3>
+    </div>
+</nav>
+
+<main>
+    <div class="personal-inf">
+        <img src="img/avatar.png" height="150px">
+        <h3>User123</h3>
+        <p>
+            <i>
+                Publications: 21 <br>
+                Subscribers: 12 <br>
+                Subsribtions: 13
+            </i>
+        </p>
+    </div>
+
+    <div id="container">
+
+    </div>
+
+    <div class="show-more">
+        <h3><i>Show more...</i></h3>
+    </div>
+</main>
+
+<div class="add-photo">
+    <img src="img/add_photo.png" width="100%">
+</div>
+
+<footer>
+    <h4>© 2018 FIREPLACE</h4>
+    <h4>Editor: Nikiforov Nikita,<br> 2 course, 13 group</h4>
+    <img src="img/default label.png">
+    <h4>Email: nikkika2011@mail.ru</h4>
+    <h4>Latest updates: 25.02.2018</h4>
+</footer>
+
+<script src="script.js"></script>
+<script src="dom.js"></script>
+
+</body>
+</html>
