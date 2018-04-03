@@ -33,9 +33,14 @@ main div {
 }
 
 .personal-inf p {
+    font-style: italic;
     font-size: 20px;
     color: darkgrey;
     margin: 0px;
+}
+
+.highlight{
+    background-color: blue;
 }
 
 .post {
@@ -152,6 +157,7 @@ main div {
 }
 
 .show-more h3 {
+    font-style: italic;
     text-align: center;
     margin: 5px;
 }
@@ -160,7 +166,155 @@ input {
     font-weight: normal;
 }
 
+.error{
+    margin: 0;
+    background-color: orange;
+    padding: 5%;
+}
+.error p{
+    margin: 0px;
+    font-weight: 600;
+    font-family: Arial;
+    font-size: 40px;
+    font-style: italic;
+}
+
+.back-signin{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+}
+
+.main-cell-signin{
+    width: 265px;
+    height: 325px;
+    margin: 8% auto 11%;
+    padding: 1%;
+    background-color:rgba(0,0,0,0.1);
+}
+.sign_in{
+    position: relative;
+    background-color:rgba(255,255,255,0.1);
+    margin: auto;
+    padding-top: 5%;
+    padding-bottom: 0px;
+    padding-left: 30%;
+    padding-right: 30%;
+    height: 365px;
+}
+
+.text-box-signin{
+    width: 235px;
+    height: 50px;
+    font-size: 32px;
+    margin-bottom: 5%;
+}
+
+.edit-photo {
+    float: left;
+    position: relative;
+    display: inline-block;
+    margin: 2%;
+    width: 35%;
+
+    background-color: rgba(255, 255, 255, 0);
+    height: 20em;
+    padding: 1%;
+    font-size: 22px;
+}
+
+.edit-inform {
+    overflow: hidden;
+    display: inline-block;
+    margin-top: 6%;
+    width: 35%;
+    font-size: 22px;
+}
+
+.icon-load {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 80%;
+    height: 80%;
+    border-color: #aaaaaa;
+}
+
+.icon-load img {
+    width: 100%;
+    height: auto;
+    bottom: 5px;
+    left: 38%;
+}
+
+.button-done {
+    float: right;
+    margin-right: 10px;
+    background: #FFA200;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 3px;
+    width: 100px;
+    height: 30px;
+    padding-top: 5px;
+    padding-right: 7px;
+    padding-left: 7px;
+    padding-bottom: 0px;
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+}
+
+.edit-descr {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0);
+    width: 100%;
+    height: 225px;
+}
+
+.edit-descr p, .edit-hash p{
+    margin: 0px;
+}
+
+.description {
+    font-size: 18px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.75);
+    width: 90%;
+    height: 150px;
+    resize: none;
+}
+
+.edit-hash {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0);
+    width: 100%;
+    height: 225px;
+}
+
+@media screen and (max-width: 620px ) {
+    .edit-photo {
+        margin: 1% 1% 1% 15%;
+        width: 85%;
+    }
+
+    .edit-inform {
+        margin: 1% 1% 1% 10%;
+        width: 85%;
+    }
+
+    .button-done {
+        margin-left: 25%;
+    }
+
+}
+
 @media screen and (max-width: 420px) {
+    .sign_in{
+        padding-top: 5%;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
     .post {
         width: 85%;
         margin: 0%;

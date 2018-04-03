@@ -19,7 +19,7 @@ nav div{
 }
 
 .authors-filter input, .authors-filter h4, .datas-filter input,
-.datas-filter h4, .tgs-filter input, .tgs-filter h4{
+.datas-filter h4, .tags-filter input, .tags-filter h4{
     margin: 1px;
     display: inline-block;
     border-radius: 5px;

@@ -5,6 +5,7 @@ body {
     min-height: 100%;
 }
 
+
 header{
     position: relative;
     padding: 0.1em;
@@ -41,7 +42,7 @@ header div{
 .user{
     margin-right: 10px;
     float: right;
-    width: 110px;
+    width: 135px;
     vertical-align: middle;
 }
 
